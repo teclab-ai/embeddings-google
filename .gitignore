@@ -1,0 +1,18 @@
+# Virtual environment
+.venv/
+
+# Environment variables (contains API keys)
+.env
+
+# PDF page cache (auto-generated)
+data/cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# OS
+.DS_Store
