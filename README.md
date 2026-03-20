@@ -75,6 +75,16 @@ Three tabs:
 # Ingest an entire folder recursively
 .venv/bin/python main.py ingest data/ --recursive
 
+# Re-ingest all files (clean slate)
+.venv/bin/python main.py clear
+.venv/bin/python main.py ingest data/ --recursive
+
+# Re-ingest by subfolder
+.venv/bin/python main.py ingest data/documents/ --recursive
+.venv/bin/python main.py ingest data/images/ --recursive
+.venv/bin/python main.py ingest data/videos/ --recursive
+.venv/bin/python main.py ingest data/audios/ --recursive
+
 # Ask a single question
 .venv/bin/python main.py ask "What does the product manual say about temperature settings?"
 
